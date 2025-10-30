@@ -19,23 +19,16 @@
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
 
-    <!-- CHANGED max-w-lg to max-w-2xl for more width -->
-    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-2xl">
-        
-        <!-- INTRODUCTORY SECTION - STYLED TO MATCH --><header class="mb-6 pb-4 border-b border-gray-200">
-            <!-- Removed the "APW 2026 Growth & Strategy" title here --><p class="text-md font-semibold text-gray-700 mb-3">As you do this exercise, consider the following priorities:</p>
-            <ul class="list-disc list-inside text-sm text-gray-700 ml-4 space-y-1">
-                <li>Increase growth and profitability</li>
-                <li>Happy and engaged staff</li>
-                <li>Satisfied customers and community partners</li>
-                <li>Strengthen the global community</li>
-                <li>Facilitate transformative educational experiences</li>
-                <li>Connect people, transform lives, cultivate personal development</li>
-                <li>Operational efficiency</li>
-                <li>Build excellence</li>
-            </ul>
-        </header>
-        <!-- END INTRODUCTORY SECTION --><h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">APW 2026 Growth & Strategy: Priorities</h1>
+    <!-- CHANGED max-w-lg to max-w-5xl for more width to accommodate side-by-side layout -->
+    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-5xl">
+
+        <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">APW 2026 Growth & Strategy: Priorities</h1>
+
+        <!-- Flex container for side-by-side layout -->
+        <div class="flex flex-col lg:flex-row gap-6">
+
+            <!-- Left side: Survey content -->
+            <div class="flex-1">
         
         <!-- Name Question - Now REQUIRED --><div class="mb-6">
             <label for="name-input" class="block text-md font-semibold text-gray-700 mb-2">
@@ -52,48 +45,75 @@
             
             <div id="survey-form" class="space-y-4">
                 
-                <!-- Priority 1: Networking & relationship building - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="networking" class="text-gray-700 w-3/4">Networking & relationship building</label>
+                <!-- Priority 1: Networking & relationship building - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="networking" class="text-gray-900 font-bold">Networking & relationship building</label>
+                        <p class="text-sm italic text-gray-600 mt-1">E.g. agencies, cultural exchange, int. education; Attending conferences, building relationships with key stakeholders/higher ups</p>
+                    </div>
                     <input type="number" id="networking" name="networking" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
                 
-                <!-- Priority 2: Marketing & awareness - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="marketing" class="text-gray-700 w-3/4">Marketing & awareness</label>
+                <!-- Priority 2: Marketing & awareness - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="marketing" class="text-gray-900 font-bold">Marketing & awareness</label>
+                        <p class="text-sm italic text-gray-600 mt-1">Includes networking/marketing collaborations with staff of organizations that aren't key stakeholders (i.e. LCCs, marketing collaborations with Cultural Care Spain)</p>
+                    </div>
                     <input type="number" id="marketing" name="marketing" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
                 
-                <!-- Priority 3: Maintaining city infrastructure - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="infrastructure" class="text-gray-700 w-3/4">Maintaining city infrastructure</label>
+                <!-- Priority 3: Maintaining city infrastructure - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="infrastructure" class="text-gray-900 font-bold">Maintaining city infrastructure</label>
+                        <p class="text-sm italic text-gray-600 mt-1">Keeping city staff employed; maintaining relationships with our academic partners and community partners</p>
+                    </div>
                     <input type="number" id="infrastructure" name="infrastructure" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
                 
-                <!-- Priority 4: In-person course offerings - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="in_person_courses" class="text-gray-700 w-3/4">In-person course offerings</label>
+                <!-- Priority 4: In-person course offerings - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="in_person_courses" class="text-gray-900 font-bold">In-person course offerings</label>
+                        <p class="text-sm italic text-gray-600 mt-1">New and/or modified for-credit courses. Adding new programming for educational credit to additional cities or current cities; or modifying already existing curriculum in our cities. Following same general model we currently have. Examples: LA Creativity and Wellness; opening up a new city; creating a new curriculum.</p>
+                    </div>
                     <input type="number" id="in_person_courses" name="in_person_courses" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
                 
-                <!-- Priority 5: Staff engagement & development - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="staff_engagement" class="text-gray-700 w-3/4">Staff engagement & development</label>
+                <!-- Priority 5: Staff engagement & development - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="staff_engagement" class="text-gray-900 font-bold">Staff engagement & development</label>
+                        <p class="text-sm italic text-gray-600 mt-1">Recruiting, training, and retaining an engaged workforce that have opportunities for professional development and growth within APW. Succession planning and leadership development/pipeline.</p>
+                    </div>
                     <input type="number" id="staff_engagement" name="staff_engagement" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
                 
-                <!-- Priority 6: Additional revenue streams - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="revenue_streams" class="text-gray-700 w-3/4">Additional revenue streams</label>
+                <!-- Priority 6: Additional revenue streams - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="revenue_streams" class="text-gray-900 font-bold">Additional revenue streams</label>
+                        <p class="text-sm italic text-gray-600 mt-1">Any source of revenue that differs from our current sources of revenue, which are the welcome tour & educational classes for credit for APs. This includes new domestic cultural exchange models (even if they include APs getting ed credits as one of our customers), and not for credits add ons/courses (because while they involve APs, they would be paying for a service that does not include receiving educational credits).</p>
+                    </div>
                     <input type="number" id="revenue_streams" name="revenue_streams" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
 
-                <!-- Priority 7: Online course offerings - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="online_courses" class="text-gray-700 w-3/4">Online course offerings</label>
+                <!-- Priority 7: Online course offerings - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="online_courses" class="text-gray-900 font-bold">Online course offerings</label>
+                        <p class="text-sm italic text-gray-600 mt-1">New and/or modified for-credit courses. Could also include incorporating a new delivery method (LMS, synchronous platform, etc).</p>
+                    </div>
                     <input type="number" id="online_courses" name="online_courses" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
 
-                <!-- Priority 8: Operational efficiencies - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="operational_efficiencies" class="text-gray-700 w-3/4">Operational efficiencies</label>
+                <!-- Priority 8: Operational efficiencies - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="operational_efficiencies" class="text-gray-900 font-bold">Operational efficiencies</label>
+                        <p class="text-sm italic text-gray-600 mt-1">Broad bucket! Anything that helps the organization run more efficiently, from both a systems and a people perspective. Examples: automation, streamline tech, reduce repetitive/inefficient labor by ensuring efforts across all roles are connected to clear and focused org priorities.</p>
+                    </div>
                     <input type="number" id="operational_efficiencies" name="operational_efficiencies" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
 
-                <!-- Priority 9: Welcome tour - WIDTHS ADJUSTED --><div class="flex items-center justify-between space-x-4">
-                    <label for="welcome_tour" class="text-gray-700 w-3/4">Welcome tour</label>
+                <!-- Priority 9: Welcome tour - WIDTHS ADJUSTED --><div class="flex items-start justify-between space-x-4">
+                    <div class="w-3/4">
+                        <label for="welcome_tour" class="text-gray-900 font-bold">Welcome tour</label>
+                        <p class="text-sm italic text-gray-600 mt-1">Additional/expanded current partnerships</p>
+                    </div>
                     <input type="number" id="welcome_tour" name="welcome_tour" min="0" max="100" value="0" class="survey-input w-1/4 p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
             </div>
@@ -114,6 +134,29 @@
         <!-- Success Message - TEXT UPDATED --><div id="success-message" class="hidden mt-4 p-4 bg-green-100 text-green-700 border border-green-300 rounded-md text-center">
             Thank you!
         </div>
+            </div>
+            <!-- End of left side -->
+
+            <!-- Right side: Introductory section -->
+            <div class="lg:w-80 flex-shrink-0">
+                <header class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <p class="text-md font-semibold text-gray-700 mb-3">As you do this exercise, consider the following priorities:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 ml-4 space-y-1">
+                        <li>Increase growth and profitability</li>
+                        <li>Happy and engaged staff</li>
+                        <li>Satisfied customers and community partners</li>
+                        <li>Strengthen the global community</li>
+                        <li>Facilitate transformative educational experiences</li>
+                        <li>Connect people, transform lives, cultivate personal development</li>
+                        <li>Operational efficiency</li>
+                        <li>Build excellence</li>
+                    </ul>
+                </header>
+            </div>
+            <!-- End of right side -->
+
+        </div>
+        <!-- End of flex container -->
     </div>
 
     <script>
